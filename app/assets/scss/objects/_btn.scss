@@ -1,0 +1,22 @@
+.btn {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    transition: all .5s ease-in;
+    text-transform: uppercase;
+    width: 100%;
+
+    &.btn-primary {
+        background-color: $pink;
+        color: #fff;
+        transition: ease .5s all;
+
+        &:hover {
+            background-color:darken($pink, 3);
+        }
+    }
+
+    &.btn-small {
+        width: 50%;
+    }
+}
