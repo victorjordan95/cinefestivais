@@ -1,7 +1,18 @@
+.cards {
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
 .card {
     margin: 0 0 36px;
-    &-picture {
+    @media screen and (min-width: 1024px) {
+        width: calc(25% - 16px);
+    }
 
+    &-picture {
+        width: 100%;
     }
 
     &-label {

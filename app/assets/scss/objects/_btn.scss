@@ -13,7 +13,7 @@
 
         &:hover {
             background-color: $white;
-            color: transparent;
+            color: #424242;
         }
     }
 
@@ -29,5 +29,8 @@
 
     &.btn-small {
         width: 50%;
+        @media screen and (min-width: 1024px) {
+            width: 15%;
+        }
     }
 }

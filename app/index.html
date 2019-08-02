@@ -60,17 +60,21 @@
 
 	<nav class="navbar">
 		<div class="navbar-left">
-			<svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg>
+			<svg class="icon icon-menu">
+				<use xlink:href="#icon-menu"></use>
+			</svg>
 		</div>
 		<img src="https://i.imgur.com/Po1qKd5.png" alt="Logo Cine Festivais" class="navbar-logo">
 		<div class="navbar-right">
-			<svg class="icon icon-search1"><use xlink:href="#icon-search1"></use></svg>
+			<svg class="icon icon-search1">
+				<use xlink:href="#icon-search1"></use>
+			</svg>
 		</div>
 	</nav>
 
-	<header>
+	<header class="header">
 		<!-- Carrossel -->
-		<img src="https://picsum.photos/id/3/300/500" alt="" style="width: 100%;">
+		<img src="https://picsum.photos/id/3/300/500" alt="" class="header-picture">
 	</header>
 
 	<main>
@@ -78,20 +82,36 @@
 		<section class="content">
 			<h2 class="content-title">Destaques</h2>
 
-			<div class="card">
-				<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
-				<div class="card-label">
-					<span class="card-label__text">Entrevistas</span>
+			<div class="cards">
+				<div class="card">
+					<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
+					<div class="card-label">
+						<span class="card-label__text">Entrevistas</span>
+					</div>
+					<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
 				</div>
-				<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
-			</div>
+				<div class="card">
+					<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
+					<div class="card-label">
+						<span class="card-label__text">Entrevistas</span>
+					</div>
+					<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
+				</div>
+				<div class="card">
+					<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
+					<div class="card-label">
+						<span class="card-label__text">Entrevistas</span>
+					</div>
+					<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
+				</div>
 
-			<div class="card">
-				<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
-				<div class="card-label">
-					<span class="card-label__text">Entrevistas</span>
+				<div class="card">
+					<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
+					<div class="card-label">
+						<span class="card-label__text">Entrevistas</span>
+					</div>
+					<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
 				</div>
-				<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
 			</div>
 
 			<div class="is-center">
@@ -101,7 +121,7 @@
 		</section>
 
 		<!-- Críticas -->
-		<section class="content full">
+		<section class="content full articles">
 
 			<article class="article bg-grey">
 				<img src="https://picsum.photos/id/3/300/200" alt="" class="article-picture">
@@ -144,38 +164,76 @@
 		<section class="content">
 			<h2 class="content-title">Notícias</h2>
 
-			<article class="new">
-				<img src="https://picsum.photos/id/5/300/200" alt="" class="new-picture">
-				<span class="new-tag">8º Olhar de Cinema</span>
-				<h4 class="new-title">
-					Zumbilândia 2: diretor revela mais detalhes sobre a sequência
-				</h4>
-				<span class="new-datetime">
-					15/07/2019 | 14h30
-				</span>
-			</article>
+			<section class="news">
+				<div class="news-left">
+					<article class="new">
+						<img src="https://i.imgur.com/3wTAEWW.png" alt="" class="new-picture">
+						<div class="new-content">
+							<span class="new-tag">8º Olhar de Cinema</span>
+							<h4 class="new-title">
+								Zumbilândia 2: diretor revela mais detalhes sobre a sequência
+							</h4>
+							<span class="new-datetime">
+								15/07/2019 | 14h30
+							</span>
+						</div>
+					</article>
 
-			<article class="new">
-				<img src="https://picsum.photos/id/5/300/200" alt="" class="new-picture">
-				<span class="new-tag">8º Olhar de Cinema</span>
-				<h4 class="new-title">
-					Zumbilândia 2: diretor revela mais detalhes sobre a sequência
-				</h4>
-				<span class="new-datetime">
-					15/07/2019 | 14h30
-				</span>
-			</article>
+					<article class="new">
+						<img src="https://i.imgur.com/3wTAEWW.png" alt="" class="new-picture">
+						<div class="new-content">
+							<span class="new-tag">8º Olhar de Cinema</span>
+							<h4 class="new-title">
+								Zumbilândia 2: diretor revela mais detalhes sobre a sequência
+							</h4>
+							<span class="new-datetime">
+								15/07/2019 | 14h30
+							</span>
+						</div>
+					</article>
+				</div>
 
-			<article class="new">
-				<span class="new-tag">8º Olhar de Cinema</span>
-				<h4 class="new-title">
-					Zumbilândia 2: diretor revela mais detalhes sobre a sequência
-				</h4>
-				<span class="new-datetime">
-					15/07/2019 | 14h30
-				</span>
-			</article>
+				<div class="news-right">
+					<article class="new">
+						<img src="https://i.imgur.com/3wTAEWW.png" alt="" class="new-picture--small">
+						<div class="new-content--small">
+							<span class="new-tag">8º Olhar de Cinema</span>
+							<h4 class="new-title">
+								Zumbilândia 2: diretor revela mais detalhes sobre a sequência
+							</h4>
+							<span class="new-datetime">
+								15/07/2019 | 14h30
+							</span>
+						</div>
+					</article>
 
+					<article class="new">
+						<img src="https://i.imgur.com/3wTAEWW.png" alt="" class="new-picture--small">
+						<div class="new-content--small">
+							<span class="new-tag">8º Olhar de Cinema</span>
+							<h4 class="new-title">
+								Zumbilândia 2: diretor revela mais detalhes sobre a sequência
+							</h4>
+							<span class="new-datetime">
+								15/07/2019 | 14h30
+							</span>
+						</div>
+					</article>
+					<article class="new">
+						<img src="https://i.imgur.com/3wTAEWW.png" alt="" class="new-picture--small">
+						<div class="new-content--small">
+							<span class="new-tag">8º Olhar de Cinema</span>
+							<h4 class="new-title">
+								Zumbilândia 2: diretor revela mais detalhes sobre a sequência
+							</h4>
+							<span class="new-datetime">
+								15/07/2019 | 14h30
+							</span>
+						</div>
+					</article>
+				</div>
+
+			</section>
 		</section>
 
 		<!-- Newsletter -->
@@ -233,20 +291,36 @@
 		<section class="content">
 			<h2 class="content-title">Especiais</h2>
 
-			<div class="card">
-				<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
-				<div class="card-label">
-					<span class="card-label__text">Entrevistas</span>
+			<div class="cards">
+				<div class="card">
+					<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
+					<div class="card-label">
+						<span class="card-label__text">Entrevistas</span>
+					</div>
+					<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
 				</div>
-				<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
-			</div>
+				<div class="card">
+					<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
+					<div class="card-label">
+						<span class="card-label__text">Entrevistas</span>
+					</div>
+					<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
+				</div>
+				<div class="card">
+					<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
+					<div class="card-label">
+						<span class="card-label__text">Entrevistas</span>
+					</div>
+					<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
+				</div>
 
-			<div class="card">
-				<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
-				<div class="card-label">
-					<span class="card-label__text">Entrevistas</span>
+				<div class="card">
+					<img src="https://picsum.photos/id/3/300/200" alt="" class="card-picture">
+					<div class="card-label">
+						<span class="card-label__text">Entrevistas</span>
+					</div>
+					<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
 				</div>
-				<p class="card-text">"Na Paraíba Anoitece": Uma conversa com Ramon Porto Mota</p>
 			</div>
 
 			<div class="is-center">
