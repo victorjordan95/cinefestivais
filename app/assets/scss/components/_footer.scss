@@ -19,6 +19,9 @@
             display: flex;
             flex-flow: column wrap;
             margin-bottom: 24px;
+            @media screen and (min-width: 1024px) {
+                flex-direction: row;
+            }
 
             >a {
                 font-size: 0.875rem;
@@ -26,6 +29,9 @@
                 line-height: 24px;
                 text-decoration: none;
                 text-transform: uppercase;
+                @media screen and (min-width: 1024px) {
+                    margin: 0 16px;
+                }
             }
 
             &:first-child>a {
