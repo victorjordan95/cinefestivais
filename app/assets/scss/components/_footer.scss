@@ -1,22 +1,76 @@
 .footer {
-    color: #fff;
-    text-align: center;
-    background-color: #212121;
+    background-color: #333333;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 16px 24px 0;
 
-    .name {
-        margin: 0;
-        padding: 20px;
+    &-picture {
+        margin-bottom: 8px;
     }
 
-    .developed {
-        color : #ccc;
-        margin: 0;
-        opacity: .5;
+    &-links {
+        align-items: center;
+        display: flex;
+        flex-flow: column wrap;
 
-        a {
-            color : #ccc;
-            text-decoration: underline;
+        &__link {
+            align-items: center;
+            display: flex;
+            flex-flow: column wrap;
+            margin-bottom: 24px;
 
+            >a {
+                font-size: 0.875rem;
+                font-weight: bold;
+                line-height: 24px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            &:first-child>a {
+                color: $white;
+            }
+
+            &:last-child>a {
+                color: $gray;
+            }
         }
+    }
+
+    &-social {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 16px;
+
+        .icon {
+            background-color: #fff;
+            border-radius: 50%;
+            fill: #333333;
+            height: 40px;
+            margin: 0 4px;
+            padding: 0px 10px;
+            width: 40px;
+        }
+    }
+
+    &-copyright {
+        color: $gray;
+        font-size: 0.6rem;
+        line-height: 12px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    &-logo {
+        align-items: center;
+        border-top: 1px solid $gray;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 8px 0;
+        text-align: center;
+        width: 100%;
+
     }
 }

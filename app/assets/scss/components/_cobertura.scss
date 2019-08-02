@@ -1,9 +1,26 @@
+.coberturas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 .cobertura {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 16px;
+    width: 50%;
+    
 
     &-picture {
-        
-    }
-    &-legend {
 
+    }
+
+    &-legend {
+        font-size: 0.75rem;
+        font-weight: bold;
+        margin-top: 8px;
+        text-align: center;
+        text-transform: uppercase;
     }
 }

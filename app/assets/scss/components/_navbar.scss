@@ -1,40 +1,29 @@
-.navbar-default {
-    background-color: #f8f8f8;
-    border-color: #e7e7e7;
-    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.5);
-    .navbar-brand {
-        img {
-            height: 70px;
-            width: 100px;
+.navbar {
+    align-items: center;
+    background-color: $white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 16px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
 
-        }
-    }
-    .navbar-header {
-        height: 100px;
+    .icon {
+        height: 25px;
+        width: 25px;
     }
 
-    .nav {
-        li {
-            height: 100px;
-            a {
-                transition: all .5s ease;
-                top : 20px;
-                will-change: color;
-                &:hover {
-                    color : $azul-escuro;
-                }
-            }
-        }
+    &-logo {
+        position: absolute;
+    left: calc(50% - 50px);
+    top: 0;
     }
-}
 
-@media screen and (min-width: 768px) {
-    .navbar-default {
-        .navbar-brand {
-            img {
-                left : 50px;
-                position: relative;
-            }
-        }
+    &-left {
+    }
+
+    &-right {
     }
 }
