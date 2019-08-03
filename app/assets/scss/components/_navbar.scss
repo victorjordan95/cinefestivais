@@ -1,11 +1,12 @@
 .navbar {
     align-items: center;
-    background-color: $white;
+    background-color: #fff;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     height: 50px;
     padding: 0 16px;
+    position: fixed;
     width: 100%;
     z-index: 3;
 
@@ -15,14 +16,40 @@
     }
 
     &-logo {
+        left: calc(50% - 50px);
         position: absolute;
-    left: calc(50% - 50px);
-    top: 0;
-    }
+        top: 0;
 
-    &-left {
-    }
+        &.scroll {
+            margin-left: 20px;
+            max-height: 50px;
+        }
+    }   
 
-    &-right {
+    &-side {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 45%;
+
+        &--links>a {
+            color: $black;
+            display: none;
+            font-weight: bold;
+            font-size: 0.875rem;
+            text-decoration: none;
+            margin: 0 24px;
+            transition: all ease 0.5s;
+            text-transform: uppercase;
+            @media screen and (min-width: 1024px) {
+                display: inline;
+            }
+
+            &:hover,
+            &:active {
+                color: $pink;
+                text-decoration: underline;
+            }
+        }
     }
 }

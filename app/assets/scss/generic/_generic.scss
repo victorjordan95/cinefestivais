@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: $font;
+    font-family: $fontRegular;
 }
 
 html,
@@ -14,15 +14,11 @@ body {
     min-height: 100%;
 }
 
-.navbar-fixed-bottom, .navbar-fixed-top {
-    z-index: 999!important;
-}
-
 body {
     background-color: #FFF;
     min-width: 320px;
 }
 
-.bgGray {
-    background-color : #f1f1f1;;
-}
+// p {
+//     font-family: $fontSerif;
+// }
